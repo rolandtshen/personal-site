@@ -10,7 +10,6 @@ type LayoutProps = {
 const tabs = [
   { label: "About", href: "/about" },
   { label: "Work", href: "/work" },
-  { label: "Writing", href: "/writing" },
 ];
 
 export default function Layout({ children }: LayoutProps) {
@@ -38,6 +37,14 @@ export default function Layout({ children }: LayoutProps) {
           </nav>
           <main className={styles.content}>{children}</main>
           <footer className={styles.footer}>
+            <a
+              href="mailto:rolandshen@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.socialLink}
+            >
+              Email
+            </a>
             <a
               href="https://www.linkedin.com/"
               target="_blank"

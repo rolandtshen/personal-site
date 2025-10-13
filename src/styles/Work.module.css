@@ -24,7 +24,7 @@
   flex-direction: column;
   gap: 0.25rem;
   
-  a:hover {
+  a[href]:hover {
     color: #124dff;
   }
 }
@@ -40,8 +40,46 @@
   color: var(--muted-foreground);
 }
 
+.archivedSection {
+  margin-top: 2rem;
+  border-top: 1px solid var(--border);
+  padding-top: 1.5rem;
+}
+
+.toggleButton {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--muted-foreground);
+  transition: color 0.2s ease;
+  margin-bottom: 1rem;
+}
+
+.toggleButton:hover {
+  color: var(--foreground);
+}
+
+.arrow {
+  transition: transform 0.2s ease;
+  font-size: 0.8rem;
+}
+
+.arrowExpanded {
+  transform: rotate(180deg);
+}
+
 @media (max-width: 640px) {
   .projectList {
     gap: 1rem;
+  }
+  
+  .archivedSection {
+    margin-top: 1.5rem;
+    padding-top: 1rem;
   }
 }
