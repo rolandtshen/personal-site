@@ -8,7 +8,7 @@ type LayoutProps = {
 };
 
 const tabs = [
-  { label: "About", href: "/about" },
+  { label: "About", href: "/" },
   { label: "Work", href: "/work" },
 ];
 
