@@ -38,7 +38,7 @@ export default function Layout({ children }: LayoutProps) {
           <main className={styles.content}>{children}</main>
           <footer className={styles.footer}>
             <a
-              href="mailto:rolandshen@gmail.com"
+              href="mailto:rolandtshen@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
               className={styles.socialLink}
